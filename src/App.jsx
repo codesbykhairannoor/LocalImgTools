@@ -86,7 +86,7 @@ function MainApp() {
   const [resizeHeight, setResizeHeight] = useState('');
   const [maintainAspectRatio, setMaintainAspectRatio] = useState(true);
   const [showAdvancedCompress, setShowAdvancedCompress] = useState(false);
-  const [watermarkText, setWatermarkText] = useState('© SuperOptimize');
+  const [watermarkText, setWatermarkText] = useState('© Local Img Tools');
   const [watermarkColor, setWatermarkColor] = useState('#ffffff');
   const [watermarkOpacity, setWatermarkOpacity] = useState(0.8);
   const [watermarkPosition, setWatermarkPosition] = useState('bottom-right');
@@ -344,7 +344,7 @@ function MainApp() {
     });
 
     const content = await zip.generateAsync({ type: "blob" });
-    saveAs(content, `superoptimize_${toFormat.toLowerCase()}.zip`);
+    saveAs(content, `localimgtools_${toFormat.toLowerCase()}.zip`);
   };
 
   const clearAll = () => {
@@ -758,7 +758,7 @@ function MainApp() {
               <a href="#">Contact Us</a>
             </div>
             <div className="footer-copyright">
-              <p>&copy; {new Date().getFullYear()} SuperOptimize. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Local Img Tools. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -1008,7 +1008,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">
-            <FaBolt /> SuperOptimize
+            <FaBolt /> Local Img Tools
           </div>
           <p style={{ marginTop: '1rem', color: '#94a3b8', fontSize: '0.9rem', lineHeight: '1.6' }}>
             The ultimate client-side bulk image optimizer. 100% secure, zero uploads, unlimited usage. Process files locally with WebAssembly power.
@@ -1034,7 +1034,7 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <div className="footer-copy">
-          &copy; {currentYear} SuperOptimize. All conversions happen on your device.
+          &copy; {currentYear} Local Img Tools. All conversions happen on your device.
         </div>
         <div className="footer-socials" style={{ display: 'flex', gap: '1rem' }}>
           <a href="#" style={{ color: '#94a3b8' }}><FaGlobe /> English</a>

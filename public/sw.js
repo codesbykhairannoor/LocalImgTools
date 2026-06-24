@@ -1,4 +1,4 @@
-const CACHE_NAME = 'superoptimize-cache-v1';
+const CACHE_NAME = 'localimgtools-cache-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

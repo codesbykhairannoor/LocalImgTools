@@ -22,10 +22,10 @@ const formats = ['PNG', 'JPG', 'WEBP', 'AVIF', 'SVG', 'HEIC', 'PDF'];
 
 const translations = {
   en: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Ultra-fast, client-side bulk image optimizer and format converter. 100% secure, zero uploads.",
     dropzoneDefault: "Drag & drop images here, or click to browse",
-    featuresTitle: "Why SuperOptimize?",
+    featuresTitle: "Why Local Img Tools?",
     featPrivacyTitle: "100% Secure & Private",
     featPrivacyDesc: "All conversions happen locally in your browser. Your private images are never uploaded to any server.",
     featSpeedTitle: "Lightning Fast",
@@ -39,10 +39,10 @@ const translations = {
     quality: "Quality"
   },
   id: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Pengoptimal gambar massal & konverter format client-side super cepat. 100% aman, tanpa upload.",
     dropzoneDefault: "Seret & lepas gambar di sini, atau klik untuk memilih",
-    featuresTitle: "Mengapa SuperOptimize?",
+    featuresTitle: "Mengapa Local Img Tools?",
     featPrivacyTitle: "100% Aman & Privat",
     featPrivacyDesc: "Semua konversi terjadi secara lokal di browser Anda. Gambar pribadi Anda tidak pernah dikirim ke server mana pun.",
     featSpeedTitle: "Sangat Cepat",
@@ -56,10 +56,10 @@ const translations = {
     quality: "Kualitas"
   },
   es: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Optimizador de imágenes por lotes y convertidor de formato ultrarrápido del lado del cliente. 100% seguro, cero subidas.",
     dropzoneDefault: "Arrastre y suelte imágenes aquí, o haga clic para buscar",
-    featuresTitle: "¿Por qué SuperOptimize?",
+    featuresTitle: "¿Por qué Local Img Tools?",
     featPrivacyTitle: "100% Seguro y Privado",
     featPrivacyDesc: "Todas las conversiones ocurren localmente en su navegador. Sus imágenes privadas nunca se suben a ningún servidor.",
     featSpeedTitle: "Rápido como el Rayo",
@@ -73,10 +73,10 @@ const translations = {
     quality: "Calidad"
   },
   fr: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Optimiseur d'images en masse et convertisseur de format client-side ultra-rapide. 100% sécurisé, zéro upload.",
     dropzoneDefault: "Faites glisser et déposez des images ici, ou cliquez pour parcourir",
-    featuresTitle: "Pourquoi SuperOptimize ?",
+    featuresTitle: "Pourquoi Local Img Tools ?",
     featPrivacyTitle: "100% Sécurisé & Privé",
     featPrivacyDesc: "Toutes les conversions se font localement dans votre navigateur. Vos images privées ne sont jamais envoyées sur un serveur.",
     featSpeedTitle: "Rapide comme l'éclair",
@@ -90,10 +90,10 @@ const translations = {
     quality: "Qualité"
   },
   de: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Ultraschneller, clientseitiger Massen-Bildoptimierer und Formatkonverter. 100% sicher, kein Upload.",
     dropzoneDefault: "Bilder hierher ziehen oder klicken zum Auswählen",
-    featuresTitle: "Warum SuperOptimize?",
+    featuresTitle: "Warum Local Img Tools?",
     featPrivacyTitle: "100% Sicher & Privat",
     featPrivacyDesc: "Alle Konvertierungen finden lokal in Ihrem Browser statt. Ihre privaten Bilder werden niemals auf einen Server hochgeladen.",
     featSpeedTitle: "Blitzschnell",
@@ -107,10 +107,10 @@ const translations = {
     quality: "Qualität"
   },
   pt: {
-    title: "SuperOptimize",
+    title: "Local Img Tools",
     tagline: "Otimizador e conversor de imagens em lote ultrarrápido do lado do cliente. 100% seguro, sem uploads.",
     dropzoneDefault: "Arraste e solte imagens aqui, ou clique para navegar",
-    featuresTitle: "Por que o SuperOptimize?",
+    featuresTitle: "Por que o Local Img Tools?",
     featPrivacyTitle: "100% Seguro & Privado",
     featPrivacyDesc: "Todas as conversões ocorrem localmente no seu navegador. Suas imagens privadas nunca são enviadas para nenhum servidor.",
     featSpeedTitle: "Rápido como um Raio",
@@ -131,7 +131,7 @@ const getSeoContent = (lang, from = '', to = '') => {
   const content = {
     en: {
       headline: isGeneric 
-        ? "SuperOptimize | Free Client-Side Image Converter & Compressor" 
+        ? "Local Img Tools | Free Client-Side Image Converter & Compressor" 
         : `Convert ${from.toUpperCase()} to ${to.toUpperCase()} Online (100% Local & Secure)`,
       description: isGeneric 
         ? "Optimize, compress, and convert PNG, JPG, WEBP, AVIF, SVG, and HEIC images in your browser. Absolutely secure with zero server uploads." 
@@ -140,7 +140,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Fast, Safe, and Zero Server Fees" 
         : `Why Convert ${from.toUpperCase()} to ${to.toUpperCase()}?`,
       introText: isGeneric 
-        ? "SuperOptimize runs entirely client-side. We utilize browser WebAssembly and Canvas APIs so you can process large image bundles in seconds. No data ever leaves your computer." 
+        ? "Local Img Tools runs entirely client-side. We utilize browser WebAssembly and Canvas APIs so you can process large image bundles in seconds. No data ever leaves your computer." 
         : `Converting ${from.toUpperCase()} to ${to.toUpperCase()} helps you optimize web compatibility and performance. ${
             from.toLowerCase() === 'heic' ? "Apple's HEIC format is highly compressed but not compatible with Windows or Android. Converting it to JPG/PNG solves all compatibility issues." : ''
           } ${
@@ -153,7 +153,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Is this ${from.toUpperCase()} to ${to.toUpperCase()} converter safe?`,
-          a: `Yes, 100%. Unlike online converters, SuperOptimize does not upload your files to any external server. All conversion logic runs locally inside your browser.`
+          a: `Yes, 100%. Unlike online converters, Local Img Tools does not upload your files to any external server. All conversion logic runs locally inside your browser.`
         },
         {
           q: `How long does the ${from.toUpperCase()} to ${to.toUpperCase()} conversion take?`,
@@ -167,7 +167,7 @@ const getSeoContent = (lang, from = '', to = '') => {
     },
     id: {
       headline: isGeneric 
-        ? "SuperOptimize | Konverter & Kompresor Gambar Lokal Gratis" 
+        ? "Local Img Tools | Konverter & Kompresor Gambar Lokal Gratis" 
         : `Konversi ${from.toUpperCase()} ke ${to.toUpperCase()} Online (100% Lokal & Aman)`,
       description: isGeneric 
         ? "Optimalkan, kompres, dan konversi gambar PNG, JPG, WEBP, AVIF, SVG, dan HEIC di browser Anda. Aman tanpa unggah ke server." 
@@ -176,7 +176,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Cepat, Aman, dan Tanpa Biaya Server" 
         : `Mengapa Mengonversi ${from.toUpperCase()} ke ${to.toUpperCase()}?`,
       introText: isGeneric 
-        ? "SuperOptimize berjalan sepenuhnya secara client-side. Kami memanfaatkan API WebAssembly dan Canvas browser agar Anda bisa memproses banyak gambar sekaligus. Data Anda tidak pernah keluar dari komputer." 
+        ? "Local Img Tools berjalan sepenuhnya secara client-side. Kami memanfaatkan API WebAssembly dan Canvas browser agar Anda bisa memproses banyak gambar sekaligus. Data Anda tidak pernah keluar dari komputer." 
         : `Mengonversi ${from.toUpperCase()} ke ${to.toUpperCase()} membantu Anda mengoptimalkan kecocokan dan performa web. ${
             from.toLowerCase() === 'heic' ? "Format HEIC Apple sangat ringkas tetapi tidak didukung Windows atau Android. Mengonversinya ke JPG/PNG menyelesaikan masalah kompatibilitas secara instan." : ''
           } ${
@@ -189,7 +189,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Apakah konverter ${from.toUpperCase()} ke ${to.toUpperCase()} ini aman?`,
-          a: `Sangat aman. Berbeda dengan konverter online lainnya, SuperOptimize tidak mengunggah file Anda ke server eksternal mana pun. Pemrosesan berjalan di browser Anda.`
+          a: `Sangat aman. Berbeda dengan konverter online lainnya, Local Img Tools tidak mengunggah file Anda ke server eksternal mana pun. Pemrosesan berjalan di browser Anda.`
         },
         {
           q: `Berapa lama proses konversi ${from.toUpperCase()} ke ${to.toUpperCase()}?`,
@@ -203,7 +203,7 @@ const getSeoContent = (lang, from = '', to = '') => {
     },
     es: {
       headline: isGeneric 
-        ? "SuperOptimize | Convertidor y Compresor de Imágenes Gratis" 
+        ? "Local Img Tools | Convertidor y Compresor de Imágenes Gratis" 
         : `Convertir ${from.toUpperCase()} a ${to.toUpperCase()} Gratis (100% Local y Seguro)`,
       description: isGeneric 
         ? "Optimice, comprima y convierta imágenes PNG, JPG, WEBP, AVIF, SVG y HEIC en su navegador. Completamente seguro sin subir al servidor." 
@@ -212,7 +212,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Rápido, Seguro y sin Costos de Servidor" 
         : `¿Por qué convertir ${from.toUpperCase()} a ${to.toUpperCase()}?`,
       introText: isGeneric 
-        ? "SuperOptimize se ejecuta completamente en el lado del cliente. Utilizamos las API WebAssembly y Canvas del navegador para procesar lotes de imágenes en segundos. Sus datos nunca salen de su computadora." 
+        ? "Local Img Tools se ejecuta completamente en el lado del cliente. Utilizamos las API WebAssembly y Canvas del navegador para procesar lotes de imágenes en segundos. Sus datos nunca salen de su computadora." 
         : `Convertir ${from.toUpperCase()} a ${to.toUpperCase()} le ayuda a optimizar el rendimiento y compatibilidad web. ${
             from.toLowerCase() === 'heic' ? "El formato HEIC de Apple ahorra espacio pero no es compatible con Windows o Android. Convertirlo a JPG resuelve problemas de compatibilidad." : ''
           } ${
@@ -225,7 +225,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `¿Es seguro este convertidor de ${from.toUpperCase()} a ${to.toUpperCase()}?`,
-          a: "Sí, al 100%. A diferencia de otros convertidores en línea, SuperOptimize no sube sus archivos a ningún servidor externo. Todo ocurre en su propio navegador."
+          a: "Sí, al 100%. A diferencia de otros convertidores en línea, Local Img Tools no sube sus archivos a ningún servidor externo. Todo ocurre en su propio navegador."
         },
         {
           q: `¿Cuánto tiempo toma convertir de ${from.toUpperCase()} a ${to.toUpperCase()}?`,
@@ -239,7 +239,7 @@ const getSeoContent = (lang, from = '', to = '') => {
     },
     fr: {
       headline: isGeneric 
-        ? "SuperOptimize | Convertisseur d'images et Optimiseur gratuit" 
+        ? "Local Img Tools | Convertisseur d'images et Optimiseur gratuit" 
         : `Convertir ${from.toUpperCase()} en ${to.toUpperCase()} en ligne (100% local et sécurisé)`,
       description: isGeneric 
         ? "Optimisez, compressez et convertissez les images PNG, JPG, WEBP, AVIF, SVG et HEIC dans votre navigateur. Totalement sécurisé sans aucun upload." 
@@ -248,7 +248,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Rapide, sécurisé et sans frais de serveur" 
         : `Pourquoi convertir ${from.toUpperCase()} en ${to.toUpperCase()} ?`,
       introText: isGeneric 
-        ? "SuperOptimize fonctionne entièrement côté client. Nous utilisons les API WebAssembly et Canvas du navigateur pour traiter vos images en quelques secondes. Aucune donnée ne quitte votre ordinateur." 
+        ? "Local Img Tools fonctionne entièrement côté client. Nous utilisons les API WebAssembly et Canvas du navigateur pour traiter vos images en quelques secondes. Aucune donnée ne quitte votre ordinateur." 
         : `La conversion de ${from.toUpperCase()} en ${to.toUpperCase()} vous aide à optimiser la compatibilité et les performances de vos pages web. ${
             from.toLowerCase() === 'heic' ? "Le format HEIC d'Apple est très compressé mais incompatible avec Windows ou Android. Le convertir en JPG résout tous les problèmes de compatibilité." : ''
           } ${
@@ -261,7 +261,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Est-ce que ce convertisseur de ${from.toUpperCase()} vers ${to.toUpperCase()} est sécurisé ?`,
-          a: "Oui, à 100%. Contrairement aux convertisseurs en ligne classiques, SuperOptimize ne télécharge jamais vos images sur un serveur externe. Tout est traité localement."
+          a: "Oui, à 100%. Contrairement aux convertisseurs en ligne classiques, Local Img Tools ne télécharge jamais vos images sur un serveur externe. Tout est traité localement."
         },
         {
           q: `Combien de temps prend la conversion de ${from.toUpperCase()} vers ${to.toUpperCase()} ?`,
@@ -275,7 +275,7 @@ const getSeoContent = (lang, from = '', to = '') => {
     },
     de: {
       headline: isGeneric 
-        ? "SuperOptimize | Kostenloser Bildkonverter & Optimierer" 
+        ? "Local Img Tools | Kostenloser Bildkonverter & Optimierer" 
         : `Konvertieren Sie ${from.toUpperCase()} in ${to.toUpperCase()} Online (100% lokal & sicher)`,
       description: isGeneric 
         ? "Optimieren, komprimieren und konvertieren Sie PNG, JPG, WEBP, AVIF, SVG und HEIC Bilder direkt im Browser. 100% sicher ohne Server-Uploads." 
@@ -284,7 +284,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Schnell, sicher und absolut kostenlos" 
         : `Warum ${from.toUpperCase()} in ${to.toUpperCase()} konvertieren?`,
       introText: isGeneric 
-        ? "SuperOptimize läuft vollständig auf der Client-Seite. Wir nutzen WebAssembly und Canvas-APIs Ihres Browsers, um Bildpakete in Sekunden zu verarbeiten. Es werden keine Daten übertragen." 
+        ? "Local Img Tools läuft vollständig auf der Client-Seite. Wir nutzen WebAssembly und Canvas-APIs Ihres Browsers, um Bildpakete in Sekunden zu verarbeiten. Es werden keine Daten übertragen." 
         : `Die Konvertierung von ${from.toUpperCase()} in ${to.toUpperCase()} verbessert die Web-Kompatibilität und Performance. ${
             from.toLowerCase() === 'heic' ? "Das HEIC-Format von Apple ist stark komprimiert, aber nicht mit Windows oder Android kompatibel. Die Konvertierung in JPG löst dieses Problem." : ''
           } ${
@@ -297,7 +297,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Ist dieser ${from.toUpperCase()}-in-${to.toUpperCase()}-Konverter sicher?`,
-          a: "Ja, absolut. Im Gegensatz zu anderen Online-Tools lädt SuperOptimize Ihre Dateien nicht hoch. Alles wird direkt lokal in Ihrem Browser verarbeitet."
+          a: "Ja, absolut. Im Gegensatz zu anderen Online-Tools lädt Local Img Tools Ihre Dateien nicht hoch. Alles wird direkt lokal in Ihrem Browser verarbeitet."
         },
         {
           q: `Wie lange dauert die Konvertierung von ${from.toUpperCase()} in ${to.toUpperCase()}?`,
@@ -311,7 +311,7 @@ const getSeoContent = (lang, from = '', to = '') => {
     },
     pt: {
       headline: isGeneric 
-        ? "SuperOptimize | Conversor e Otimizador de Imagem Grátis" 
+        ? "Local Img Tools | Conversor e Otimizador de Imagem Grátis" 
         : `Converter ${from.toUpperCase()} para ${to.toUpperCase()} Online (100% Local & Seguro)`,
       description: isGeneric 
         ? "Otimize, comprima e converta imagens PNG, JPG, WEBP, AVIF, SVG e HEIC no seu navegador. Totalmente seguro sem upload de imagens." 
@@ -320,7 +320,7 @@ const getSeoContent = (lang, from = '', to = '') => {
         ? "Rápido, seguro e livre de custos de servidor" 
         : `Por que converter ${from.toUpperCase()} para ${to.toUpperCase()}?`,
       introText: isGeneric 
-        ? "O SuperOptimize funciona inteiramente no lado do cliente. Usamos APIs WebAssembly e Canvas do navegador para processar suas fotos em segundos, garantindo total privacidade." 
+        ? "O Local Img Tools funciona inteiramente no lado do cliente. Usamos APIs WebAssembly e Canvas do navegador para processar suas fotos em segundos, garantindo total privacidade." 
         : `Converter ${from.toUpperCase()} para ${to.toUpperCase()} ajuda a otimizar a compatibilidade e a velocidade do seu site. ${
             from.toLowerCase() === 'heic' ? "O formato HEIC da Apple economiza espaço, mas não abre no Windows ou Android. A conversão para JPG resolve essa incompatibilidade." : ''
           } ${
@@ -333,7 +333,7 @@ const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Este conversor de ${from.toUpperCase()} para ${to.toUpperCase()} é seguro?`,
-          a: "Sim, 100%. Ao contrário de conversores na nuvem, o SuperOptimize não envia suas fotos para servidores externos. Todo o processo ocorre no seu navegador."
+          a: "Sim, 100%. Ao contrário de conversores na nuvem, o Local Img Tools não envia suas fotos para servidores externos. Todo o processo ocorre no seu navegador."
         },
         {
           q: `Quanto tempo demora a conversão de ${from.toUpperCase()} para ${to.toUpperCase()}?`,
@@ -733,7 +733,7 @@ const generateStaticHtml = (lang, from = '', to = '') => {
 
 // Generates hreflang alternate headers
 const getHreflangHtml = (from, to) => {
-  const baseDomain = "https://superoptimize.com";
+  const baseDomain = "https://localimgtools.com";
   const pathConvert = from && to ? `/convert/${from.toLowerCase()}-to-${to.toLowerCase()}` : '';
   
   return languages.map(l => {
@@ -746,7 +746,7 @@ const getJsonLdSchema = (seoDescription) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "SuperOptimize",
+    "name": "Local Img Tools",
     "operatingSystem": "All",
     "applicationCategory": "MultimediaApplication",
     "offers": {
@@ -827,7 +827,7 @@ routes.forEach(route => {
   html = html.replace(/<meta name="viewport".*?\/>/, match => `${match}\n    ${metaDescTag}`);
 
   // Inject hreflangs, canononical and JSON-LD
-  const canonicalUrl = `https://superoptimize.com/${routePath}`;
+  const canonicalUrl = `https://localimgtools.com/${routePath}`;
   const seoInjections = `
     <link rel="canonical" href="${canonicalUrl}" />
     ${getHreflangHtml(from, to)}
@@ -855,7 +855,7 @@ routes.forEach(route => {
 
 // GENERATE SITEMAP.XML
 console.log("Generating XML Sitemap Index...");
-const baseDomain = "https://superoptimize.com";
+const baseDomain = "https://localimgtools.com";
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 `;
