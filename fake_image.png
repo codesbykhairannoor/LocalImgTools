@@ -1,0 +1,1 @@
+This is plain text, not image bytes. If our security signature check works, it should reject this file immediately even though it has a .png extension.

@@ -1,0 +1,16 @@
+{
+  "short_name": "SuperOptimize",
+  "name": "SuperOptimize Image Converter & Compressor",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#080a10",
+  "theme_color": "#8a2be2",
+  "display": "standalone",
+  "orientation": "portrait"
+}
