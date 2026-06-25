@@ -4,23 +4,33 @@ export const getCompressSeoContent = (lang, format = '') => {
   
   const content = {
     en: {
-      headline: isGeneric ? "Best Free Online Image Compressor" : `Compress ${f} Images Without Losing Quality`,
-      description: isGeneric ? "Reduce image file size instantly with the best free online image compressor. Perfect for website optimization and saving storage space. 100% secure, no uploads." : `Free online ${f} compressor. Reduce ${f} file size locally on your device for absolute privacy. Optimize images for web performance.`,
-      introTitle: isGeneric ? "Fast Image Compression Tool" : `Why Compress ${f} Images?`,
-      introText: `Compressing ${f ? f : 'image'} files is the most effective way to save bandwidth and improve website loading speeds. Local Img Tools is a client-side image optimizer, meaning your files are processed directly in your browser and never uploaded to any server.`,
+      headline: isGeneric ? "Compress Image Without Upload (Unlimited Bulk & Free)" : `Compress ${f} Images Without Uploading to Any Server`,
+      description: isGeneric ? "Stop uploading private photos to cloud servers! Our free online image compressor runs 100% locally. Bulk compress unlimited images instantly with zero upload time." : `Free offline ${f} compressor that runs in your browser. Reduce ${f} file sizes instantly without uploading. Unlimited bulk processing and 100% privacy.`,
+      introTitle: isGeneric ? "Why Our Compressor Beats Cloud Tools (iLoveIMG, CloudConvert)" : `Why Compress ${f} Images Locally?`,
+      introText: `Unlike traditional cloud-based tools that force you to upload files, wait in queues, and limit your file sizes, our compressor uses your device's power. This means **Zero Uploads**, **Instant Processing**, and **Total Privacy**. Compressing ${f ? f : 'image'} files here is the smartest, safest way to optimize images.`,
       faqs: [
-        { q: `Is this ${f ? f : 'bulk image'} compressor safe?`, a: "Yes, 100%. Local Img Tools does not upload your files to any external server. All compression runs securely on your local machine." },
-        { q: `How much can I compress my ${f ? f : 'images'}?`, a: "You can reduce file sizes by up to 80-90% depending on the format and selected quality, with minimal visible quality loss, making it the best image compressor for website optimization." }
+        { q: `Is it true I don't have to upload my ${f ? f : 'images'}?`, a: "Yes! 100% true. The compression engine runs completely inside your browser using WebAssembly. Your files never leave your device." },
+        { q: `Is there a bulk compression limit?`, a: "No! Since we don't use server bandwidth, you can compress hundreds or even thousands of high-res images at once with absolutely no restrictions." }
+      ],
+      steps: [
+        { name: `Select ${f ? f : 'Images'}`, description: `Drag and drop unlimited ${f ? f : 'image'} files into the dropzone. No uploads needed.` },
+        { name: "Set Compression Quality", description: "Adjust the slider to balance visual quality and file size." },
+        { name: "Instant Download", description: "Click compress and get your optimized files instantly from your own browser." }
       ]
     },
     id: {
-      headline: isGeneric ? "Local Img Tools | Kompresor Gambar Online Gratis" : `Kompres Gambar ${f} Online (100% Lokal)`,
-      description: isGeneric ? "Kompres dan kurangi ukuran file gambar tanpa kehilangan kualitas. Proses berjalan sepenuhnya offline di browser Anda." : `Kompresor ${f} online gratis. Kurangi ukuran file ${f} secara lokal di perangkat Anda demi privasi mutlak.`,
-      introTitle: isGeneric ? "Kompresi Gambar Cepat" : `Mengapa Mengompres Gambar ${f}?`,
-      introText: `Mengompres file ${f ? f : 'gambar'} membantu Anda menghemat bandwidth dan meningkatkan kecepatan muat situs web. Local Img Tools berjalan sepenuhnya client-side, file Anda tidak pernah diunggah.`,
+      headline: isGeneric ? "Kompres Gambar Tanpa Upload (Gratis & Tanpa Kuota)" : `Kompres Gambar ${f} Tanpa Upload ke Server`,
+      description: isGeneric ? "Berhenti mengunggah foto pribadi ke server cloud! Kompresor gambar online kami 100% lokal. Kompres massal gambar tanpa batas, instan, tanpa menyedot kuota internet." : `Kompresor ${f} offline gratis yang berjalan di browser Anda. Kurangi ukuran file ${f} secara instan tanpa upload. Privasi terjamin 100%.`,
+      introTitle: isGeneric ? "Mengapa Kami Jauh Lebih Baik dari Tool Cloud (iLoveIMG dll)?" : `Mengapa Kompres ${f} Secara Lokal?`,
+      introText: `Tidak seperti tool konvensional yang memaksa Anda mengunggah file, mengantre, dan membatasi ukuran file, kompresor kami menggunakan tenaga perangkat Anda sendiri. Ini berarti **Tanpa Upload**, **Super Cepat**, dan **Privasi Total**. File ${f ? f : 'gambar'} Anda tidak pernah keluar dari HP/Laptop Anda.`,
       faqs: [
-        { q: `Apakah kompresor ${f ? f : ''} ini aman?`, a: "Ya, 100%. Local Img Tools tidak mengunggah file Anda ke server eksternal mana pun. Pemrosesan lokal." },
-        { q: `Seberapa banyak saya bisa mengompres ${f ? f : 'gambar'}?`, a: "Anda dapat mengurangi ukuran file hingga 80-90% dengan kehilangan kualitas visual yang minimal." }
+        { q: `Apakah benar saya tidak butuh kuota internet untuk upload?`, a: "Benar 100%! Mesin kompresi berjalan sepenuhnya di dalam browser Anda. File Anda tidak pernah diunggah ke mana pun." },
+        { q: `Apakah ada batasan jumlah ${f ? f : 'gambar'} yang bisa dikompres?`, a: "TIDAK ADA! Karena kami tidak memakai server cloud, Anda bebas mengompres ratusan gambar HD sekaligus tanpa batasan apa pun." }
+      ],
+      steps: [
+        { name: `Pilih ${f ? f : 'Gambar'}`, description: `Seret dan lepas file ${f ? f : 'gambar'} dalam jumlah tak terbatas ke area dropzone. Tanpa proses upload.` },
+        { name: "Atur Kualitas Kompresi", description: "Sesuaikan slider untuk mengatur keseimbangan antara kualitas visual dan ukuran file." },
+        { name: "Unduh Instan", description: "Klik kompres dan dapatkan file yang telah dioptimalkan secara instan dari browser Anda sendiri." }
       ]
     }
     // Fallback to English for other languages for brevity in this expansion

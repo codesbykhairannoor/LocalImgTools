@@ -1,0 +1,86 @@
+/* CLOUDCONVERT FLAT UI REDESIGN OVERRIDES */
+body {
+  background: #f8f9fa !important;
+  color: #333 !important;
+}
+
+:root {
+  --glass-bg: #ffffff !important;
+  --glass-border: #eaebec !important;
+  --glass-shadow: 0 1px 3px rgba(0,0,0,0.08) !important;
+  --text-main: #333 !important;
+  --text-muted: #777 !important;
+  --border-radius: 4px !important;
+}
+
+/* Remove color overrides for themes so original colors cascade down */
+
+.glass-panel {
+  background: #ffffff !important;
+  border: 1px solid #eaebec !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+.glass-panel:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+  border-color: #dcdcdc !important;
+}
+
+.navbar-container {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eaebec !important;
+  box-shadow: none !important;
+  padding: 1rem 2rem !important;
+  max-width: 100% !important;
+}
+
+.nav-links {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.nav-links a.active-tool {
+  background: transparent !important;
+  border-bottom: 2px solid var(--primary) !important;
+  border-radius: 0 !important;
+}
+
+.dropzone {
+  border: 2px dashed #dcdcdc !important;
+  background: #ffffff !important;
+  border-radius: 4px !important;
+}
+.dropzone:hover, .dropzone.active {
+  border-color: var(--primary) !important;
+  background: var(--primary-light) !important;
+}
+
+.btn-massive {
+  color: #fff !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  font-weight: 500 !important;
+}
+.btn-massive:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+.btn-primary {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+.workspace-area {
+  background: #f8f9fa !important;
+}
+
+.file-item {
+  border-radius: 4px !important;
+  border: 1px solid #eaebec !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+}
+
+.logo {
+  color: var(--text-main) !important;
+}

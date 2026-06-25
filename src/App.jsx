@@ -696,6 +696,19 @@ function MainApp() {
           </section>
         )}
 
+        {/* TRUST BADGES - SaaS Premium Look */}
+        <div className="trust-badges" style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+          <div className="trust-badge">
+            <FaLock /> 100% Client-Side Privacy
+          </div>
+          <div className="trust-badge">
+            <FaBolt /> Zero Upload Time
+          </div>
+          <div className="trust-badge">
+            <FaCheckCircle /> Unlimited Bulk Processing
+          </div>
+        </div>
+
         <div className="seo-content-wrapper">
           <div className="seo-container">
             {route.isConvertRoute && (
@@ -703,9 +716,20 @@ function MainApp() {
             )}
 
             {/* Adaptive SEO Text Section */}
-            <section id="features" className="seo-intro-section glass-panel">
+            <section id="features" className="seo-intro-section glass-panel" style={{ marginTop: '3rem' }}>
               <h3 className="section-title">{seo.introTitle}</h3>
-              <p className="seo-text">{seo.introText}</p>
+              <div className="seo-text" dangerouslySetInnerHTML={{ __html: seo.introText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+              
+              {seo.steps && seo.steps.length > 0 && (
+                <div className="seo-steps" style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {seo.steps.map((step, index) => (
+                    <div key={index} id={`step${index + 1}`} style={{ padding: '1.5rem', background: '#ffffff', borderRadius: '12px', borderLeft: '4px solid var(--primary)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+                      <h4 style={{ margin: '0 0 0.5rem 0', color: 'var(--primary)', fontSize: '1.2rem', fontWeight: '700' }}>Step {index + 1}: {step.name}</h4>
+                      <p style={{ margin: 0, fontSize: '1rem', color: '#475569', lineHeight: '1.6' }}>{step.description}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </section>
 
             {/* Value Proposition features */}
