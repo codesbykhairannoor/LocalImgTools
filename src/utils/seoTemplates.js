@@ -4,13 +4,13 @@ export const getCompressSeoContent = (lang, format = '') => {
   
   const content = {
     en: {
-      headline: isGeneric ? "Local Img Tools | Free Online Image Compressor" : `Compress ${f} Images Online (100% Local)`,
-      description: isGeneric ? "Compress and reduce image file sizes without losing quality. Process runs completely offline in your browser." : `Free online ${f} compressor. Reduce ${f} file size locally on your device for absolute privacy.`,
-      introTitle: isGeneric ? "Fast Image Compression" : `Why Compress ${f} Images?`,
-      introText: `Compressing ${f ? f : 'image'} files helps you save bandwidth and improve website loading speeds. Local Img Tools runs entirely client-side, meaning your files are never uploaded to any server.`,
+      headline: isGeneric ? "Best Free Online Image Compressor" : `Compress ${f} Images Without Losing Quality`,
+      description: isGeneric ? "Reduce image file size instantly with the best free online image compressor. Perfect for website optimization and saving storage space. 100% secure, no uploads." : `Free online ${f} compressor. Reduce ${f} file size locally on your device for absolute privacy. Optimize images for web performance.`,
+      introTitle: isGeneric ? "Fast Image Compression Tool" : `Why Compress ${f} Images?`,
+      introText: `Compressing ${f ? f : 'image'} files is the most effective way to save bandwidth and improve website loading speeds. Local Img Tools is a client-side image optimizer, meaning your files are processed directly in your browser and never uploaded to any server.`,
       faqs: [
-        { q: `Is this ${f ? f : ''} compressor safe?`, a: "Yes, 100%. Local Img Tools does not upload your files to any external server. All compression runs locally." },
-        { q: `How much can I compress my ${f ? f : 'images'}?`, a: "You can reduce file sizes by up to 80-90% depending on the format and selected quality, with minimal visible quality loss." }
+        { q: `Is this ${f ? f : 'bulk image'} compressor safe?`, a: "Yes, 100%. Local Img Tools does not upload your files to any external server. All compression runs securely on your local machine." },
+        { q: `How much can I compress my ${f ? f : 'images'}?`, a: "You can reduce file sizes by up to 80-90% depending on the format and selected quality, with minimal visible quality loss, making it the best image compressor for website optimization." }
       ]
     },
     id: {
@@ -35,13 +35,13 @@ export const getResizeSeoContent = (lang, format = '') => {
   
   const content = {
     en: {
-      headline: isGeneric ? "Local Img Tools | Free Online Image Resizer" : `Resize ${f} Images Online (100% Local)`,
-      description: isGeneric ? "Change image dimensions and resize pictures easily in your browser. Absolutely secure and private." : `Free online ${f} resizer. Change dimensions of ${f} images locally on your device without limits.`,
+      headline: isGeneric ? "Free Online Image Resizer & Dimension Changer" : `Resize ${f} Images for Web & Social Media`,
+      description: isGeneric ? "Change image dimensions and resize pictures easily in your browser. The best bulk image resizer for e-commerce and social platforms. Absolutely secure and private." : `Free online ${f} resizer. Change dimensions of ${f} images locally on your device without limits or uploads.`,
       introTitle: isGeneric ? "Resize Images Instantly" : `Why Resize ${f} Images?`,
-      introText: `Resizing ${f ? f : 'image'} files is essential for social media, web performance, and document formatting. Local Img Tools resizes your images locally using your device's power.`,
+      introText: `Resizing ${f ? f : 'image'} files is essential for social media, web performance, and meeting specific e-commerce platform requirements (like Shopify or Amazon). Local Img Tools acts as a powerful bulk image resizer directly in your browser.`,
       faqs: [
-        { q: `Is this ${f ? f : ''} resizer private?`, a: "Yes, 100%. We use your browser's Canvas API to resize images locally. No data leaves your device." },
-        { q: `Does resizing ${f ? f : 'images'} affect quality?`, a: "Downsizing images generally retains crispness. We use high-quality interpolation to ensure the best results." }
+        { q: `Is this ${f ? f : ''} resizer private?`, a: "Yes, 100%. We use your browser's Canvas API to resize images locally. No data ever leaves your device." },
+        { q: `Does resizing ${f ? f : 'images'} affect quality?`, a: "Downsizing images generally retains crispness. We use high-quality interpolation algorithms to ensure the best results when changing dimensions." }
       ]
     },
     id: {
@@ -95,20 +95,20 @@ export const getSeoContent = (lang, from = '', to = '') => {
   const content = {
     en: {
       headline: isGeneric 
-        ? "Local Img Tools | Free Client-Side Image Converter & Compressor" 
-        : `Convert ${from.toUpperCase()} to ${to.toUpperCase()} Online (100% Local & Secure)`,
+        ? "Free Client-Side Image Converter & Optimizer" 
+        : `Convert ${from.toUpperCase()} to ${to.toUpperCase()} Without Losing Quality`,
       description: isGeneric 
-        ? "Optimize, compress, and convert PNG, JPG, WEBP, AVIF, SVG, and HEIC images in your browser. Absolutely secure with zero server uploads." 
-        : `Free online ${from.toUpperCase()} to ${to.toUpperCase()} converter. All conversions run locally on your device for absolute privacy. No size limits.`,
+        ? "Optimize, compress, and convert PNG, JPG, WEBP, AVIF, SVG, and HEIC images in your browser. The safest client-side image tool with zero server uploads." 
+        : `Free online ${from.toUpperCase()} to ${to.toUpperCase()} converter. Fast client-side conversion for absolute privacy. No size limits, no server uploads.`,
       introTitle: isGeneric 
         ? "Fast, Safe, and Zero Server Fees" 
         : `Why Convert ${from.toUpperCase()} to ${to.toUpperCase()}?`,
       introText: isGeneric 
-        ? "Local Img Tools runs entirely client-side. We utilize browser WebAssembly and Canvas APIs so you can process large image bundles in seconds. No data ever leaves your computer." 
+        ? "Local Img Tools is a premium client-side image optimizer. We utilize browser WebAssembly and Canvas APIs so you can process large image bundles in seconds. No data ever leaves your computer." 
         : `Converting ${from.toUpperCase()} to ${to.toUpperCase()} helps you optimize web compatibility and performance. ${
-            from.toLowerCase() === 'heic' ? "Apple's HEIC format is highly compressed but not compatible with Windows or Android. Converting it to JPG/PNG solves all compatibility issues." : ''
+            from.toLowerCase() === 'heic' ? "Converting HEIC to JPG is crucial because Apple's HEIC format is highly compressed but often incompatible with Windows, Android, or web uploads. Our tool converts HEIC to JPG without losing quality, instantly in your browser." : ''
           } ${
-            to.toLowerCase() === 'webp' ? "WebP is the modern standard recommended by Google. It reduces file sizes by up to 80% compared to PNG or JPG while keeping transparency." : ''
+            to.toLowerCase() === 'webp' ? "WebP is the modern standard recommended by Google. It reduces file sizes by up to 80% compared to PNG or JPG while keeping transparency, making it ideal for website speed optimization." : ''
           } ${
             from.toLowerCase() === 'svg' ? "SVG is a vector format. Converting it to a raster format like PNG or JPG makes it easy to use on social media and other platforms." : ''
           } ${
@@ -117,15 +117,15 @@ export const getSeoContent = (lang, from = '', to = '') => {
       faqs: [
         {
           q: `Is this ${from.toUpperCase()} to ${to.toUpperCase()} converter safe?`,
-          a: `Yes, 100%. Unlike online converters, Local Img Tools does not upload your files to any external server. All conversion logic runs locally inside your browser.`
+          a: `Yes, 100%. Unlike typical online converters, Local Img Tools does not upload your files to any external server. All conversion logic runs securely inside your browser.`
         },
         {
           q: `How long does the ${from.toUpperCase()} to ${to.toUpperCase()} conversion take?`,
-          a: "It takes less than a second per image because the file is processed locally on your computer, eliminating upload and download bottlenecks."
+          a: "It takes less than a second per image because the file is processed locally on your computer, eliminating upload and download bottlenecks entirely."
         },
         {
-          q: "Are there any file size limits?",
-          a: "No! Since files are processed on your device rather than our servers, you can process raw or high-resolution photos without limits."
+          q: "Are there any file size limits for conversion?",
+          a: "No! Since files are processed on your device rather than our servers, you can process high-resolution raw photos without limits or subscription fees."
         }
       ]
     },
